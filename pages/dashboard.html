@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Responsive enterprise dashboard overview with modern CSS architecture."
+    >
+
+    <title>Dashboard Overview</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="brand" href="../index.html">
+                Enterprise<span>Dash</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Primary navigation">
+                <a class="active" href="dashboard.html">Dashboard</a>
+                <a href="users.html">Users</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle color theme"
+            >
+                Theme
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">DASHBOARD OVERVIEW</p>
+
+                    <h1>
+                        Everything you need
+                        <span>in one place.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Track users, sessions, reports, and system performance
+                        through a responsive enterprise dashboard.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button primary-button" href="reports.html">
+                            View Reports
+                        </a>
+
+                        <a class="button secondary-button" href="users.html">
+                            Manage Users
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <span>System Status</span>
+                        <span class="status-dot">Live</span>
+                    </div>
+
+                    <strong>94.8%</strong>
+
+                    <p>Overall system performance</p>
+
+                    <div class="progress-track">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="summary-title">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">SUMMARY</p>
+                        <h2 id="summary-title">Key statistics</h2>
+                    </div>
+
+                    <p class="section-description">
+                        A quick overview of current enterprise performance.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-icon">U</div>
+                        <p>Total Users</p>
+                        <h3>1,248</h3>
+                        <span class="positive">+12.5% this month</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">S</div>
+                        <p>Active Sessions</p>
+                        <h3>86</h3>
+                        <span class="positive">+8.2% today</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">R</div>
+                        <p>Reports Generated</p>
+                        <h3>324</h3>
+                        <span class="positive">+18.4% this month</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">P</div>
+                        <p>System Performance</p>
+                        <h3>94.8%</h3>
+                        <span class="positive">+3.1% this week</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="activity-title">
+            <div class="container content-grid">
+
+                <div class="panel activity-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">ACTIVITY</p>
+                            <h2 id="activity-title">Recent activity</h2>
+                        </div>
+
+                        <a href="users.html">View all</a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <caption>Recent enterprise user activity</caption>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Activity</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Sarah Johnson</td>
+                                    <td>Updated profile</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Michael Brown</td>
+                                    <td>Generated report</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Emily Davis</td>
+                                    <td>Created account</td>
+                                    <td>
+                                        <span class="badge pending">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <aside class="panel quick-panel" aria-labelledby="quick-title">
+
+                    <p class="eyebrow">SHORTCUTS</p>
+
+                    <h2 id="quick-title">Quick actions</h2>
+
+                    <div class="quick-actions">
+
+                        <a href="users.html" class="quick-action">
+                            <strong>Add User</strong>
+                            <span>Create a new dashboard user</span>
+                        </a>
+
+                        <a href="reports.html" class="quick-action">
+                            <strong>Generate Report</strong>
+                            <span>Create a new performance report</span>
+                        </a>
+
+                        <a href="../index.html" class="quick-action">
+                            <strong>Dashboard Home</strong>
+                            <span>Return to the main dashboard</span>
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 Enterprise Dashboard. All rights reserved.
+            </p>
+
+            <nav aria-label="Footer navigation">
+                <a href="../index.html">Dashboard</a>
+                <a href="users.html">Users</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+</html>

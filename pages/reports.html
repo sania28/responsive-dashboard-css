@@ -1,1 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Responsive enterprise reports page with modern CSS architecture."
+    >
+
+    <title>Enterprise Reports</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="brand" href="../index.html">
+                Enterprise<span>Dash</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Primary navigation">
+                <a href="../index.html">Dashboard</a>
+                <a href="users.html">Users</a>
+                <a class="active" href="reports.html">Reports</a>
+            </nav>
+
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle color theme"
+            >
+                Theme
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">REPORT CENTER</p>
+
+                    <h1>
+                        Understand your
+                        <span>business performance.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Review performance reports, user activity, and system
+                        usage through a responsive reporting interface.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button primary-button" href="#reports">
+                            View Reports
+                        </a>
+
+                        <a class="button secondary-button" href="../index.html">
+                            Dashboard
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <span>Reports Ready</span>
+                        <span class="status-dot">Live</span>
+                    </div>
+
+                    <strong>24</strong>
+
+                    <p>Reports available for review</p>
+
+                    <div class="progress-track">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="reports" aria-labelledby="available-reports-title">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">REPORTS</p>
+                        <h2 id="available-reports-title">
+                            Available reports
+                        </h2>
+                    </div>
+
+                    <p class="section-description">
+                        Select a report to review enterprise information.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-icon">M</div>
+
+                        <p>Monthly Performance</p>
+
+                        <h3>Ready</h3>
+
+                        <span class="positive">
+                            Updated today
+                        </span>
+
+                        <div class="hero-actions">
+                            <button
+                                class="button primary-button"
+                                type="button"
+                            >
+                                View Report
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">U</div>
+
+                        <p>User Activity</p>
+
+                        <h3>Ready</h3>
+
+                        <span class="positive">
+                            Updated yesterday
+                        </span>
+
+                        <div class="hero-actions">
+                            <button
+                                class="button primary-button"
+                                type="button"
+                            >
+                                View Report
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">S</div>
+
+                        <p>System Usage</p>
+
+                        <h3>Processing</h3>
+
+                        <span class="badge pending">
+                            In progress
+                        </span>
+
+                        <div class="hero-actions">
+                            <button
+                                class="button secondary-button"
+                                type="button"
+                            >
+                                View Status
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon">F</div>
+
+                        <p>Financial Summary</p>
+
+                        <h3>Ready</h3>
+
+                        <span class="positive">
+                            Updated this week
+                        </span>
+
+                        <div class="hero-actions">
+                            <button
+                                class="button primary-button"
+                                type="button"
+                            >
+                                View Report
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="status-title">
+            <div class="container">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">STATUS</p>
+                            <h2 id="status-title">Report status</h2>
+                        </div>
+
+                        <a href="../index.html">Dashboard</a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <caption>Enterprise report status</caption>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Report</th>
+                                    <th scope="col">Created</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Monthly Performance Report</td>
+                                    <td>21 September 2026</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Ready
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>User Activity Report</td>
+                                    <td>20 September 2026</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Ready
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>System Usage Report</td>
+                                    <td>19 September 2026</td>
+                                    <td>
+                                        <span class="badge pending">
+                                            Processing
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Financial Summary</td>
+                                    <td>18 September 2026</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Ready
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 Enterprise Dashboard. All rights reserved.
+            </p>
+
+            <nav aria-label="Footer navigation">
+                <a href="../index.html">Dashboard</a>
+                <a href="users.html">Users</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+</html>

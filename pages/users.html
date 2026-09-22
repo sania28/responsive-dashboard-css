@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Responsive enterprise user management page with modern CSS architecture."
+    >
+
+    <title>User Management</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="brand" href="../index.html">
+                Enterprise<span>Dash</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Primary navigation">
+                <a href="../index.html">Dashboard</a>
+                <a class="active" href="users.html">Users</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle color theme"
+            >
+                Theme
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">USER MANAGEMENT</p>
+
+                    <h1>
+                        Manage your
+                        <span>enterprise users.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Add new users, review account information, and monitor
+                        user status from a responsive management interface.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button primary-button" href="#add-user">
+                            Add User
+                        </a>
+
+                        <a class="button secondary-button" href="../index.html">
+                            Dashboard
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <span>Active Users</span>
+                        <span class="status-dot">Live</span>
+                    </div>
+
+                    <strong>1,248</strong>
+
+                    <p>Registered enterprise users</p>
+
+                    <div class="progress-track">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="add-user" aria-labelledby="form-title">
+            <div class="container content-grid">
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">NEW USER</p>
+                            <h2 id="form-title">Add a user</h2>
+                        </div>
+                    </div>
+
+                    <form action="#" method="post">
+
+                        <div class="quick-actions">
+
+                            <div class="quick-action">
+                                <label for="full-name">
+                                    Full name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="quick-action">
+                                <label for="email">
+                                    Email address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="quick-action">
+                                <label for="role">
+                                    Role
+                                </label>
+
+                                <select
+                                    id="role"
+                                    name="role"
+                                    required
+                                >
+                                    <option value="">
+                                        Select a role
+                                    </option>
+
+                                    <option value="administrator">
+                                        Administrator
+                                    </option>
+
+                                    <option value="manager">
+                                        Manager
+                                    </option>
+
+                                    <option value="user">
+                                        User
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="quick-action">
+                                <label for="phone">
+                                    Phone number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    autocomplete="tel"
+                                >
+                            </div>
+
+                            <div class="quick-action">
+                                <label for="notes">
+                                    Additional notes
+                                </label>
+
+                                <textarea
+                                    id="notes"
+                                    name="notes"
+                                    rows="4"
+                                    maxlength="500"
+                                ></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="hero-actions">
+                            <button
+                                class="button primary-button"
+                                type="submit"
+                            >
+                                Create User
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <aside class="panel quick-panel" aria-labelledby="user-help-title">
+
+                    <p class="eyebrow">USER INFO</p>
+
+                    <h2 id="user-help-title">Account guidelines</h2>
+
+                    <div class="quick-actions">
+
+                        <div class="quick-action">
+                            <strong>Required information</strong>
+                            <span>
+                                Name, email, and role are required.
+                            </span>
+                        </div>
+
+                        <div class="quick-action">
+                            <strong>Account status</strong>
+                            <span>
+                                New accounts begin in a pending state.
+                            </span>
+                        </div>
+
+                        <div class="quick-action">
+                            <strong>Data protection</strong>
+                            <span>
+                                Keep account information accurate and secure.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="users-title">
+            <div class="container">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">DIRECTORY</p>
+                            <h2 id="users-title">Current users</h2>
+                        </div>
+
+                        <a href="#add-user">Add new</a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <caption>Current enterprise users</caption>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Sarah Johnson</td>
+                                    <td>sarah@example.com</td>
+                                    <td>Administrator</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Michael Brown</td>
+                                    <td>michael@example.com</td>
+                                    <td>Manager</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Emily Davis</td>
+                                    <td>emily@example.com</td>
+                                    <td>User</td>
+                                    <td>
+                                        <span class="badge pending">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>James Wilson</td>
+                                    <td>james@example.com</td>
+                                    <td>User</td>
+                                    <td>
+                                        <span class="badge success">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 Enterprise Dashboard. All rights reserved.
+            </p>
+
+            <nav aria-label="Footer navigation">
+                <a href="../index.html">Dashboard</a>
+                <a href="users.html">Users</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+</html>
